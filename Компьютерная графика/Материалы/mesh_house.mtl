@@ -1,0 +1,24 @@
+newmtl roof_brown
+Kd 0.588 0.588 0.588
+d 0
+s 1 1
+map_Kd roof_brown.png
+
+newmtl roof_stall
+Kd 0.588 0.588 0.588
+d 0
+s 1 1
+map_Kd roof_stall.png
+
+newmtl wall_03_yellow
+Kd 0.5882353 0.5882353 0.5882353
+d 0
+s 1 1
+map_Kd wall_03_yellow.png
+
+newmtl window
+Kd 0.588 0.588 0.588
+d 0
+s 1 1
+map_Kd window.png
+
