@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <ConvertNulls>False</ConvertNulls>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <Данные Ref="2" type="MasterSCADA.Report.Report.ScadaArchive.ScadaArchiveSource" isKey="true">
+        <Alias>Данные</Alias>
+        <Columns isList="true" count="5">
+          <value>Время,System.DateTime</value>
+          <Давление Ref="3" type="MasterSCADA.Report.Report.ScadaArchive.ScadaArchiveColumn" isKey="true">
+            <AggregateType>Последнее значение</AggregateType>
+            <Alias>Давление</Alias>
+            <BadSettings>Нет, Uncertain</BadSettings>
+            <Connection>$1130</Connection>
+            <ConnectionID>1</ConnectionID>
+            <FormatValue>False</FormatValue>
+            <Main>True</Main>
+            <Name>Давление</Name>
+            <StopSettings>Нет, Good</StopSettings>
+            <Type>System.Nullable`1[System.Double]</Type>
+            <UncertainSettings>Нет, Uncertain</UncertainSettings>
+          </Давление>
+          <Температура1 Ref="4" type="MasterSCADA.Report.Report.ScadaArchive.ScadaArchiveColumn" isKey="true">
+            <AggregateType>Последнее значение</AggregateType>
+            <Alias>Температура1</Alias>
+            <BadSettings>Нет, Uncertain</BadSettings>
+            <Connection>$1131</Connection>
+            <ConnectionID>2</ConnectionID>
+            <FormatValue>False</FormatValue>
+            <Main>True</Main>
+            <Name>Температура1</Name>
+            <StopSettings>Нет, Good</StopSettings>
+            <Type>System.Nullable`1[System.Double]</Type>
+            <UncertainSettings>Нет, Uncertain</UncertainSettings>
+          </Температура1>
+          <Температура2 Ref="5" type="MasterSCADA.Report.Report.ScadaArchive.ScadaArchiveColumn" isKey="true">
+            <AggregateType>Последнее значение</AggregateType>
+            <Alias>Температура2</Alias>
+            <BadSettings>Нет, Uncertain</BadSettings>
+            <Connection>$1132</Connection>
+            <ConnectionID>3</ConnectionID>
+            <FormatValue>False</FormatValue>
+            <Main>True</Main>
+            <Name>Температура2</Name>
+            <StopSettings>Нет, Good</StopSettings>
+            <Type>System.Nullable`1[System.Double]</Type>
+            <UncertainSettings>Нет, Uncertain</UncertainSettings>
+          </Температура2>
+          <Температура3 Ref="6" type="MasterSCADA.Report.Report.ScadaArchive.ScadaArchiveColumn" isKey="true">
+            <AggregateType>Последнее значение</AggregateType>
+            <Alias>Температура3</Alias>
+            <BadSettings>Нет, Uncertain</BadSettings>
+            <Connection>$1133</Connection>
+            <ConnectionID>4</ConnectionID>
+            <FormatValue>False</FormatValue>
+            <Main>True</Main>
+            <Name>Температура3</Name>
+            <StopSettings>Нет, Good</StopSettings>
+            <Type>System.Nullable`1[System.Double]</Type>
+            <UncertainSettings>Нет, Uncertain</UncertainSettings>
+          </Температура3>
+        </Columns>
+        <Dictionary isRef="1" />
+        <GenerateType>По изменению</GenerateType>
+        <Name>Данные</Name>
+        <Parameters isList="true" count="3">
+          <Начало Ref="7" type="MasterSCADA.Report.Report.ScadaArchive.ScadaArchiveConnectedParameter" isKey="true">
+            <Connection>$1144.195</Connection>
+            <ConnectionID>5</ConnectionID>
+            <Name>Начало</Name>
+            <TypeInternal>System.Nullable`1[System.DateTime]</TypeInternal>
+          </Начало>
+          <Конец Ref="8" type="MasterSCADA.Report.Report.ScadaArchive.ScadaArchiveConnectedParameter" isKey="true">
+            <Connection>$1144.196</Connection>
+            <ConnectionID>6</ConnectionID>
+            <Name>Конец</Name>
+            <TypeInternal>System.Nullable`1[System.DateTime]</TypeInternal>
+          </Конец>
+          <Интервал Ref="9" type="MasterSCADA.Report.Report.ScadaArchive.ScadaArchiveNotConnectedParameter" isKey="true">
+            <Name>Интервал</Name>
+            <Var>Internal,Internal,Internal,,System.Nullable`1[System.Double],_x0031_,False,False,False,False</Var>
+          </Интервал>
+        </Parameters>
+      </Данные>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>a608dcca063b422f8d3e65d9f5706fc2</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page Ref="10" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <Header Ref="11" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,20,1</ClientRectangle>
+          <Components isList="true" count="5">
+            <PressureLabel Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,0,4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>804df8af31584354bd951ca6b7f3b7ee</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>PressureLabel</Name>
+              <Page isRef="10" />
+              <Parent isRef="11" />
+              <Text>Давление</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </PressureLabel>
+            <TimeLabel Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>TimeLabel</Name>
+              <Page isRef="10" />
+              <Parent isRef="11" />
+              <Text>Время</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TimeLabel>
+            <RoomTemperatureLabel Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8,0,4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>df73023b8a0943d6a604f963d09aaafc</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>RoomTemperatureLabel</Name>
+              <Page isRef="10" />
+              <Parent isRef="11" />
+              <Text>Температура стенки</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </RoomTemperatureLabel>
+            <RoomTemperatureLabel Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12,0,4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>66fb05c1a09744ab8a67988216c3630a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>RoomTemperatureLabel</Name>
+              <Page isRef="10" />
+              <Parent isRef="11" />
+              <Text>Температура комнаты</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </RoomTemperatureLabel>
+            <BottomTemperatureLabel Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16,0,4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>9e0db97e42fc4593b81c6291bf5273a9</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>BottomTemperatureLabel</Name>
+              <Page isRef="10" />
+              <Parent isRef="11" />
+              <Text>Температура дна</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </BottomTemperatureLabel>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <MaxHeight>1</MaxHeight>
+          <Name>Header</Name>
+          <Page isRef="10" />
+          <Parent isRef="10" />
+        </Header>
+        <Data Ref="17" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,2.2,20,1</ClientRectangle>
+          <Components isList="true" count="5">
+            <TimeData Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>TimeData</Name>
+              <Page isRef="10" />
+              <Parent isRef="17" />
+              <Text>{Данные.Время}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TimeData>
+            <PressureData Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>4,0,4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>PressureData</Name>
+              <Page isRef="10" />
+              <Parent isRef="17" />
+              <Text>{Данные.Давление}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </PressureData>
+            <WallTemperatureData Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>8,0,4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>WallTemperatureData</Name>
+              <Page isRef="10" />
+              <Parent isRef="17" />
+              <Text>{Данные.Температура1}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </WallTemperatureData>
+            <RoomTemperatureData Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>12,0,4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>RoomTemperatureData</Name>
+              <Page isRef="10" />
+              <Parent isRef="17" />
+              <Text>{Данные.Температура2}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </RoomTemperatureData>
+            <BottomTemperatureData Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>16,0,4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>BottomTemperatureData</Name>
+              <Page isRef="10" />
+              <Parent isRef="17" />
+              <Text>{Данные.Температура3}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </BottomTemperatureData>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>Данные</DataSourceName>
+          <Filters isList="true" count="0" />
+          <MaxHeight>1</MaxHeight>
+          <Name>Data</Name>
+          <Page isRef="10" />
+          <Parent isRef="10" />
+          <Sort isList="true" count="0" />
+        </Data>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>ba1cdc4eb372491a8a80c6b3ae5931a3</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page</Name>
+      <PageHeight>30</PageHeight>
+      <PageWidth>22</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="23" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page>
+  </Pages>
+  <PrinterSettings Ref="24" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="9">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+    <value>MasterSCADA.Report.dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>7/1/2025 2:42:12 PM</ReportChanged>
+  <ReportCreated>8/26/2020 5:13:47 PM</ReportCreated>
+  <ReportFile>C:\MasterSCADA Projects\Projects\Main\Объекты\Бочка\Отчет~Отчет\report.mrt</ReportFile>
+  <ReportGuid>bc32fad357d44bd087f37821f9d6492e</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2018.3.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+  <Version>2</Version>
+</StiSerializer>
